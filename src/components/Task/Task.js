@@ -10,10 +10,12 @@ class Task extends React.Component{
     this.state = { backgroundColor: ''}
   }
 
+  // fonction de suppression de tâche
   removeTask(){
     this.props.removeTask(this.props.id);
   }
 
+  // fonction de marquer une tâche comme faite, peut être utile
   markAsDone(){
     if (this.state.backgroundColor === ''){
       this.setState({

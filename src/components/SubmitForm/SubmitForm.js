@@ -9,8 +9,10 @@ class SubmitForm extends React.Component{
     this.addItem = this.addItem.bind(this);
   }
 
+    // Ajouter un objet Tache
     addItem(e) {
       if (this._inputElement.value !== "") {
+        // création de l'objet Tache avec sa valeur son id et sa clé
         var newItem = {
           text: this._inputElement.value,
           id: this.state.tasksCount,
